@@ -1,4 +1,3 @@
-import imge from "../assets/Service/Service1.png";
 import { serviceList } from "../constants/service";
 import { useParams } from 'react-router-dom';
 
