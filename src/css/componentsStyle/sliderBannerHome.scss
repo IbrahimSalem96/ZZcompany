@@ -1,0 +1,18 @@
+@use "../functionStyle/function" as c;
+
+.sliderBannerHome{
+    height: c.vw375(400);
+    background-color: c.$grayColorBlack;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .sliderBannerHome{
+        height: c.vw834(400);
+    }    
+}
+
+@media (min-width: 1200px) {
+    .sliderBannerHome{
+        height: c.vw1920(700);
+    }   
+}

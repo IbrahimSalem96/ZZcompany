@@ -1,0 +1,142 @@
+@use "../functionStyle/function" as c;
+
+.footer {
+    padding: 20px 0;
+    background-color: c.$burgundyColor;
+    margin-top: 30px;
+
+    .footerFlex {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: c.vw375(15) c.vw375(10);
+    }
+
+    .logoFooter {
+        margin-bottom: c.vw375(20);
+        img {
+            width: c.vw375(100);
+            height: auto;
+        }
+
+        p {
+            width: c.vw375(180);
+            font-weight: 700;
+        }
+    }
+
+    .listLink {
+        margin-bottom: c.vw375(20);
+
+        p {
+            font-size: c.vw375(20);
+            font-weight: 700;
+        }
+
+        ul li {
+            list-style-type: none;
+            cursor: pointer;
+            font-size: c.vw375(16);
+
+            a {
+                text-decoration: none;
+                color: c.$whiteColor;
+                font-size: c.vw375(16);
+            }
+        }
+    }
+
+    .copyRight {
+        width: 100%;
+        p {
+            text-align: center;
+            font-weight: 700;
+            font-size: c.vw375(16);
+            margin: 20px 0 10px;
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .footer {
+        .footerFlex {
+            gap: c.vw834(15) c.vw834(10);
+        }
+
+        .logoFooter {
+            margin-bottom: c.vw834(20);
+            img {
+                width: c.vw834(100);
+                height: auto;
+            }
+        }
+
+        .listLink {
+            margin-bottom: c.vw834(20);
+
+            p {
+                font-size: c.vw834(24);
+            }
+
+            ul li {
+                list-style-type: none;
+                cursor: pointer;
+                font-size: c.vw834(16);
+
+                a {
+                    font-size: c.vw834(16);
+                }
+            }
+        }
+
+        .copyRight {
+            p {
+                font-size: c.vw834(16);
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        .footerFlex {
+            grid-template-columns: auto auto auto auto;
+            gap: c.vw1920(15) c.vw1920(10);
+        }
+
+        .logoFooter {
+            margin-bottom: c.vw1920(20);
+            p {
+                width: c.vw1920(400);
+            }
+
+            img {
+                width: c.vw1920(100);
+                height: auto;
+            }
+        }
+
+        .listLink {
+            margin-bottom: c.vw1920(20);
+
+            p {
+                font-size: c.vw1920(45);
+            }
+
+            ul li {
+                list-style-type: none;
+                cursor: pointer;
+                font-size: c.vw1920(19);
+
+                a {
+                    font-size: c.vw1920(19);
+                }
+            }
+        }
+
+        .copyRight {
+            p {
+                font-size: c.vw1920(18);
+            }
+        }
+    }
+}

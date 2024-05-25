@@ -1,0 +1,222 @@
+@use "../functionStyle/function" as c;
+
+.serviceSection {
+    padding: c.vw375(20) 0;
+
+    .filterLable {
+        padding: c.vw375(14) 0;
+        display: flex;
+        align-items: center;
+        gap: c.vw375(10);
+
+        p {
+            cursor: pointer;
+            padding: c.vw375(2) 0;
+            text-align: center;
+            width: 100px;
+            font-size: c.vw375(14);
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+        }
+    }
+
+    .cardService {
+        .boxContent {
+            width: 100%;
+
+            .hoverImage {
+                cursor: pointer;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 200px;
+                }
+
+                .bgHover {
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: c.$blackHoverImage;
+                }
+
+                a {
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                    text-decoration: none;
+                    color: c.$whiteColor;
+                    padding: c.vw375(10) c.vw375(60);
+                    font-size: c.vw375(16);
+                    border: 1px solid c.$whiteColor;
+                    border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    -ms-border-radius: 12px;
+                    -o-border-radius: 12px;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    a,
+                    .bgHover {
+                        opacity: 1;
+                        transition: all 0.3s ease-in-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            p {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .btnSeeMoreSrvices {
+        cursor: pointer;
+        width: 100%;
+        margin: c.vw375(50) 0 0;
+        display: flex;
+
+        a {
+            text-decoration: none;
+            font-size: c.vw375(20);
+            padding: c.vw375(10) c.vw375(30);
+            border-radius: 6px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            background-color: c.$burgundyColor;
+            color: c.$whiteColor;
+            margin: 0 auto;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: c.$burgundyColor;
+                background-color: c.$whiteColor;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .serviceSection {
+        padding: c.vw834(20) 0;
+
+        .filterLable {
+            padding: c.vw834(14) 0;
+            gap: c.vw834(10);
+
+            p {
+                padding: c.vw834(2) 0;
+                font-size: c.vw834(16);
+            }
+        }
+
+        .cardService {
+            display: flex;
+            gap: 30px 20px;
+            flex-wrap: wrap;
+
+            .boxContent {
+                width: calc(100% / 2 - 10px);
+
+                .hoverImage {
+                    a {
+                        padding: c.vw834(10) c.vw834(60);
+                        font-size: c.vw834(16);
+                    }
+                }
+            }
+        }
+
+        .btnSeeMoreSrvices {
+            margin: c.vw834(50) 0;
+
+            a {
+                font-size: c.vw834(20);
+                padding: c.vw834(10) c.vw834(30);
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .serviceSection {
+        padding: c.vw1920(100) 0 0;
+        
+        h3{
+            font-size: c.vw1920(57);
+        }
+
+        p{
+            font-size: c.vw1920(34);
+        }
+
+        .filterLable {
+            padding: c.vw1920(16) 0;
+            gap: c.vw1920(14);
+            margin-bottom: c.vw1920(20);
+
+            p {
+                padding: c.vw1920(6) 0;
+                font-size: c.vw1920(20);
+            }
+        }
+
+        .cardService {
+            display: flex;
+            gap: 30px 20px;
+            flex-wrap: wrap;
+
+            .boxContent {
+                width: calc(100% / 2 - 10px);
+
+                .hoverImage {
+                    img {
+                        height: 300px;
+                    }
+
+                    a {
+                        padding: c.vw1920(10) c.vw1920(60);
+                        font-size: c.vw1920(34);
+                    }
+                }
+            }
+        }
+
+        .btnSeeMoreSrvices {
+            margin: c.vw1920(80) 0;
+
+            a {
+                font-size: c.vw1920(34);
+                padding: c.vw1920(10) c.vw1920(30);
+            }
+        }
+    }
+}

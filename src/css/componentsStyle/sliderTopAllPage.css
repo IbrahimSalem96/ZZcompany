@@ -1,0 +1,15 @@
+.sliderTopAllPage {
+  height: 53.3333333333vw;
+  background-color: #353535;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+  .sliderTopAllPage {
+    height: 23.9808153477vw;
+  }
+}
+@media (min-width: 1200px) {
+  .sliderTopAllPage {
+    height: 15.625vw;
+  }
+}

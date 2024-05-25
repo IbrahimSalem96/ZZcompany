@@ -1,0 +1,31 @@
+.navTopPage {
+  height: auto;
+  width: 100%;
+  padding: 2.6666666667vw;
+  background-color: #721F31;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.2vw;
+  font-weight: 700;
+}
+.navTopPage span {
+  color: #faff00;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+  .navTopPage {
+    height: 3.5971223022vw;
+    padding: 0.7194244604vw;
+    font-size: 1.4388489209vw;
+  }
+}
+@media (min-width: 1200px) {
+  .navTopPage {
+    height: 2.6041666667vw;
+    padding: 1.0416666667vw;
+    font-size: 1.0416666667vw;
+  }
+}

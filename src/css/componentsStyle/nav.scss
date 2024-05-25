@@ -1,0 +1,172 @@
+@use "../functionStyle/function" as c;
+
+.navList {
+    padding: c.vw375(20);
+    background-color: c.$blackColor;
+
+    .navLogo {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: c.vw375(50);
+            height: auto;
+        }
+    }
+
+    .navLink {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        padding: 20px;
+        background-color: c.$blackColor;
+        height: auto;
+        transition: all 0.7s ease-in-out;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+
+        ul {
+            margin-top: 10px;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: c.$whiteColor;
+            font-weight: 600;
+        }
+    }
+
+    .navLinkShow {
+        opacity: 1;
+        z-index: 2;
+        transition: all 0.7s ease-in-out;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+    }
+
+    .barResponservMobile {
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    .navLinkDesktop{
+        display: none;
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .navList {
+        padding: c.vw834(10);
+        background-color: c.$blackColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navLogo {
+            img {
+                width: c.vw834(50);
+            }
+        }
+
+        .navLinkDesktop {
+            display: flex;
+
+            ul {
+                display: flex;
+                gap: c.vw834(14);
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                font-size: c.vw834(14);
+                text-decoration: none;
+                color: c.$whiteColor;
+                font-weight: 600;
+            }
+
+            a.activeLink{
+                color: c.$burgundyColor;
+            }
+        }
+
+        .navLink {
+            display: none;
+        }
+
+        .navLinkShow {
+            display: none;
+        }
+
+        .barResponservMobile {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .navList {
+        padding: c.vw1920(20) c.vw1920(40);
+        background-color: c.$blackColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navLogo {
+            img {
+                width: c.vw1920(100);
+            }
+        }
+
+        .navLinkDesktop {
+            display: flex;
+
+            ul {
+                display: flex;
+                gap: c.vw1920(24);
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                font-size: c.vw1920(25);
+                text-decoration: none;
+                color: c.$whiteColor;
+                font-weight: 600;
+            }
+
+            a.activeLink{
+                color: c.$burgundyColor;
+            }
+        }
+
+        .navLink {
+            display: none;
+        }
+
+        .navLinkShow {
+            display: none;
+        }
+
+        .barResponservMobile {
+            display: none;
+        }
+    }
+}

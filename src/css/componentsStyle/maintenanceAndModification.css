@@ -1,0 +1,133 @@
+.maintenanceAndModification {
+  padding: 5.3333333333vw 0;
+  text-align: center;
+}
+.maintenanceAndModification .boxContent {
+  margin: 5.3333333333vw 0;
+}
+.maintenanceAndModification .boxContent .priceAfterDiscount {
+  position: relative;
+  background: rgb(51, 41, 215);
+  padding: 20px;
+  border-radius: 12px;
+}
+.maintenanceAndModification .boxContent .priceAfterDiscount p {
+  font-size: 5.8666666667vw;
+  font-weight: 700;
+}
+.maintenanceAndModification .boxContent .boxListServices {
+  background-color: rgb(37, 37, 37);
+  padding: 5.3333333333vw;
+  border-radius: 12px;
+}
+.maintenanceAndModification .boxContent .boxListServices .listContent {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.maintenanceAndModification .boxContent .boxListServices .listContent img {
+  width: 18.6666666667vw;
+  height: auto;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+.maintenanceAndModification .boxContent .boxListServices .listContent p {
+  font-size: 5.3333333333vw;
+  font-weight: 700;
+  color: #808080;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+.maintenanceAndModification .boxContent .boxListServices .listContent:hover img {
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+.maintenanceAndModification .boxContent .boxListServices .listContent:hover p {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+  .maintenanceAndModification {
+    padding: 2.3980815348vw 0;
+  }
+  .maintenanceAndModification .boxContent {
+    margin: 2.3980815348vw 0;
+  }
+  .maintenanceAndModification .boxContent .priceAfterDiscount {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .maintenanceAndModification .boxContent .priceAfterDiscount p {
+    font-size: 2.8776978417vw;
+  }
+  .maintenanceAndModification .boxContent .boxListServices {
+    padding: 9.5923261391vw 2.3980815348vw 2.3980815348vw;
+    margin-top: -3.8369304556vw;
+    display: flex;
+    align-items: center;
+    gap: 30px 20px;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent {
+    width: 50%;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent img {
+    width: 11.9904076739vw;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent p {
+    font-size: 2.3980815348vw;
+  }
+}
+@media (min-width: 1200px) {
+  .maintenanceAndModification {
+    padding: 2.0833333333vw 0;
+  }
+  .maintenanceAndModification h3 {
+    font-size: 2.96875vw;
+  }
+  .maintenanceAndModification p {
+    font-size: 1.7708333333vw;
+  }
+  .maintenanceAndModification .boxContent {
+    margin: 1.0416666667vw 0;
+  }
+  .maintenanceAndModification .boxContent .priceAfterDiscount {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .maintenanceAndModification .boxContent .priceAfterDiscount p {
+    font-size: 2.4479166667vw;
+  }
+  .maintenanceAndModification .boxContent .boxListServices {
+    padding: 5.7291666667vw 1.0416666667vw 1.5625vw;
+    margin-top: -3.2291666667vw;
+    display: flex;
+    align-items: center;
+    gap: 30px 20px;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent {
+    width: 50%;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent img {
+    width: 6.25vw;
+  }
+  .maintenanceAndModification .boxContent .boxListServices .listContent p {
+    font-size: 1.8229166667vw;
+  }
+}

@@ -1,0 +1,151 @@
+@use "../functionStyle/function" as c;
+
+.singleService {
+    padding: c.vw375(30) 0 0;
+    .boxcontent {
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: c.vw375(26);
+            line-height: 30px;
+        }
+
+        p {
+            font-size: c.vw375(14);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .btnSubmit {
+            margin-top: c.vw375(40);
+            width: 100%;
+            display: flex;
+            gap: 12px;
+
+            a {
+                font-size: c.vw375(16);
+                text-decoration: none;
+                padding: c.vw375(8) c.vw375(12);
+                border-radius: 6px;
+                cursor: pointer;
+            }
+
+            a:nth-child(1) {
+                background-color: c.$burgundyColor;
+                color: c.$whiteColor;
+            }
+
+            a:nth-child(2) {
+                background-color: c.$whiteColor;
+                color: c.$burgundyColor;
+            }
+
+            a:nth-child(2),
+            a:nth-child(1) {
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+}
+
+            a:nth-child(1):hover {
+                background-color: c.$whiteColor;
+                color: c.$burgundyColor;
+            }
+
+            a:nth-child(2):hover {
+                background-color: c.$burgundyColor;
+                color: c.$whiteColor;
+            }
+
+            a:nth-child(2):hover,
+            a:nth-child(1):hover {
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+}
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .singleService {
+        padding: c.vw834(30) 0 0;
+        .boxcontent {
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: c.vw834(26);
+            }
+
+            p {
+                font-size: c.vw834(14);
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            .btnSubmit {
+                margin-top: c.vw834(40);
+                a {
+                    font-size: c.vw834(18);
+                    padding: c.vw834(6) c.vw834(12);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .singleService {
+        padding: c.vw1920(70) 0 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: start;
+        gap: 20px;
+        .boxcontent {
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: c.vw1920(38);
+                line-height: 30px;
+            }
+
+            p {
+                font-size: c.vw1920(21);
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    font-size: c.vw1920(24);
+                    margin-bottom: c.vw1920(12);
+                }
+            }
+
+            .btnSubmit {
+                margin-top: c.vw1920(40);
+                a {
+                    font-size: c.vw1920(24);
+                    padding: c.vw1920(12);
+                }
+            }
+        }
+    }
+}

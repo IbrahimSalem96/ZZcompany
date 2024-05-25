@@ -1,0 +1,18 @@
+@use "../functionStyle/function" as c;
+
+.sliderTopAllPage{
+    height: c.vw375(200);
+    background-color: c.$grayColorBlack;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .sliderTopAllPage{
+        height: c.vw834(200);
+    }    
+}
+
+@media (min-width: 1200px) {
+    .sliderTopAllPage{
+        height: c.vw1920(300);
+    }   
+}

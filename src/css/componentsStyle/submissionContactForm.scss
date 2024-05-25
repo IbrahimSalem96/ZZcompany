@@ -1,0 +1,45 @@
+@use "../functionStyle/function" as c;
+
+.submissionContactForm{
+    padding: c.vw375(40) 0;
+
+    h1{
+        font-size: c.vw375(25);
+        margin-bottom: c.vw375(10);
+    }
+
+    p{
+        font-size: c.vw375(16);
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .submissionContactForm{
+        padding: c.vw834(40) 0 c.vw834(20);
+    
+        h1{
+            font-size: c.vw834(25);
+            margin-bottom: c.vw834(10);
+        }
+    
+        p{
+            font-size: c.vw834(16);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .submissionContactForm{
+        padding: c.vw1920(40) 0 0;
+    
+        h1{
+            font-size: c.vw1920(50);
+            margin-bottom: c.vw1920(20);
+        }
+    
+        p{
+            width: c.vw1920(1000);
+            font-size: c.vw1920(26);
+        }
+    }
+}

@@ -1,0 +1,153 @@
+@use "../functionStyle/function" as c;
+
+.maintenanceAndModification {
+    padding: c.vw375(20) 0;
+    text-align: center;
+
+    .boxContent {
+        margin: c.vw375(20) 0;
+        .priceAfterDiscount {
+            position: relative;
+            background: c.$blueColor;
+            padding: 20px;
+            border-radius: 12px;
+            p {
+                font-size: c.vw375(22);
+                font-weight: 700;
+            }
+        }
+
+        .boxListServices {
+            background-color: rgb(37, 37, 37);
+            padding: c.vw375(20);
+            border-radius: 12px;
+
+            .listContent {
+                cursor: pointer;
+                margin-bottom: 20px;
+                img {
+                    width: c.vw375(70);
+                    height: auto;
+                    filter: brightness(0.5);
+                    -webkit-filter: brightness(0.5);
+                    transition: all 0.7s ease-in-out;
+                    -webkit-transition: all 0.7s ease-in-out;
+                    -moz-transition: all 0.7s ease-in-out;
+                    -ms-transition: all 0.7s ease-in-out;
+                    -o-transition: all 0.7s ease-in-out;
+                }
+
+                p {
+                    font-size: c.vw375(20);
+                    font-weight: 700;
+                    color: c.$gray8080Color;
+                    transition: all 0.7s ease-in-out;
+                    -webkit-transition: all 0.7s ease-in-out;
+                    -moz-transition: all 0.7s ease-in-out;
+                    -ms-transition: all 0.7s ease-in-out;
+                    -o-transition: all 0.7s ease-in-out;
+                }
+
+                &:hover {
+                    img {
+                        filter: brightness(0.8);
+                        -webkit-filter: brightness(0.8);
+                        transition: all 0.7s ease-in-out;
+                        -webkit-transition: all 0.7s ease-in-out;
+                        -moz-transition: all 0.7s ease-in-out;
+                        -ms-transition: all 0.7s ease-in-out;
+                        -o-transition: all 0.7s ease-in-out;
+                    }
+                    p {
+                        color: rgba(255, 255, 255, 0.8);
+                        transition: all 0.7s ease-in-out;
+                        -webkit-transition: all 0.7s ease-in-out;
+                        -moz-transition: all 0.7s ease-in-out;
+                        -ms-transition: all 0.7s ease-in-out;
+                        -o-transition: all 0.7s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .maintenanceAndModification {
+        padding: c.vw834(20) 0;
+
+        .boxContent {
+            margin: c.vw834(20) 0;
+            .priceAfterDiscount {
+                width: 80%;
+                margin: 0 auto;
+                p {
+                    font-size: c.vw834(24);
+                }
+            }
+
+            .boxListServices {
+                padding: c.vw834(80) c.vw834(20) c.vw834(20);
+                margin-top: c.vw834(-32);
+                display: flex;
+                align-items: center;
+                gap: 30px 20px;
+
+                .listContent {
+                    width: calc(100% / 2);
+                    img {
+                        width: c.vw834(100);
+                    }
+
+                    p {
+                        font-size: c.vw834(20);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .maintenanceAndModification {
+        padding: c.vw1920(40) 0;
+
+        h3 {
+            font-size: c.vw1920(57);
+        }
+
+        p {
+            font-size: c.vw1920(34);
+        }
+
+        .boxContent {
+            margin: c.vw1920(20) 0;
+            .priceAfterDiscount {
+                width: 80%;
+                margin: 0 auto;
+                p {
+                    font-size: c.vw1920(47);
+                }
+            }
+
+            .boxListServices {
+                padding: c.vw1920(110) c.vw1920(20) c.vw1920(30);
+                margin-top: c.vw1920(-62);
+                display: flex;
+                align-items: center;
+                gap: 30px 20px;
+
+                .listContent {
+                    width: calc(100% / 2);
+                    img {
+                        width: c.vw1920(120);
+                    }
+
+                    p {
+                        font-size: c.vw1920(35);
+                    }
+                }
+            }
+        }
+    }
+}

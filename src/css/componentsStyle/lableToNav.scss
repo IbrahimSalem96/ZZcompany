@@ -1,0 +1,35 @@
+@use "../functionStyle/function" as c;
+
+.navTopPage {
+    height: auto;
+    width: 100%;
+    padding: c.vw375(10);
+    background-color: c.$burgundyColor;
+    color: c.$whiteColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: c.vw375(12);
+    font-weight: 700;
+
+    span {
+        color: c.$goldColor;
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .navTopPage {
+        height: c.vw834(30);
+        padding: c.vw834(6);
+        font-size: c.vw834(12);
+    }
+}
+
+@media (min-width: 1200px) {
+    .navTopPage {
+        height: c.vw1920(50);
+        padding: c.vw1920(20);
+        font-size: c.vw1920(20);
+    }
+}

@@ -1,0 +1,207 @@
+@use "../functionStyle/function" as c;
+
+.contactUsForm {
+    padding: 0 0 c.vw375(20);
+    h3 {
+        margin-bottom: 12px;
+    }
+
+    .formContactUs {
+        .inputField {
+            .label {
+                margin-bottom: c.vw375(14);
+
+                ul {
+                    position: absolute;
+                    background: #000000;
+                    padding: c.vw375(10);
+                    border-radius: 0 0 12px 12px;
+                    -webkit-border-radius: 0 0 12px 12px;
+                    -moz-border-radius: 0 0 12px 12px;
+                    -ms-border-radius: 0 0 12px 12px;
+                    -o-border-radius: 0 0 12px 12px;
+                    li {
+                        cursor: pointer;
+                        list-style-type: none;
+                        margin: c.vw375(10) 0;
+                    }
+                }
+            }
+
+            label {
+                display: block;
+                margin-bottom: c.vw375(10);
+                font-size: c.vw375(16);
+                font-weight: 700;
+            }
+
+            input {
+                width: 100%;
+                height: 40px;
+                border: 1px solid gray;
+                padding: 0 10px;
+                background: #242424;
+                border-radius: 6px;
+                color: c.$whiteColor;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+        .inputFieldTextarea {
+            margin-bottom: 20px;
+
+            textarea {
+                width: 100%;
+                height: c.vw375(300);
+                border: 1px solid gray;
+                padding: 0 10px;
+                background: #242424;
+                border-radius: 6px;
+                color: c.$whiteColor;
+                margin-top: c.vw375(10);
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+        }
+
+        .btnSubmitRequest {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                font-size: c.vw375(20);
+                padding: c.vw375(10) c.vw375(30);
+                border-radius: 6px;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                background-color: c.$burgundyColor;
+                color: c.$whiteColor;
+                margin: 0 auto;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: c.$burgundyColor;
+                    background-color: c.$whiteColor;
+                    transition: all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .contactUsForm {
+        padding: c.vw834(20) 0;
+
+        .formContactUs {
+            .inputField {
+                display: flex;
+                gap: 30px 20px;
+
+                .label {
+                    width: calc(100% / 2);
+                    margin-bottom: c.vw834(14);
+
+                    ul {
+                        padding: c.vw834(10);
+                        li {
+                            margin: c.vw834(10) 0;
+                        }
+                    }
+                }
+
+                label {
+                    margin-bottom: c.vw834(10);
+                    font-size: c.vw834(16);
+                }
+            }
+
+            .inputFieldTextarea {
+                textarea {
+                    width: 100%;
+                    height: c.vw834(300);
+                    border: 1px solid gray;
+                    padding: 0 10px;
+                    background: #242424;
+                    border-radius: 6px;
+                    color: c.$whiteColor;
+                    margin-top: c.vw834(10);
+                }
+            }
+
+            .btnSubmitRequest {
+                a {
+                    font-size: c.vw834(20);
+                    padding: c.vw834(10) c.vw834(30);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .contactUsForm {
+        padding: c.vw1920(40) 0;
+
+        h3 {
+            font-size: c.vw1920(57);
+        }
+
+        .formContactUs {
+            .inputField {
+                display: flex;
+                gap: 30px 20px;
+
+                .label {
+                    width: calc(100% / 2);
+                    margin-bottom: c.vw1920(14);
+
+                    ul {
+                        padding: c.vw1920(10);
+                        li {
+                            margin: c.vw1920(10) 0;
+                        }
+                    }
+                }
+
+                label {
+                    margin-bottom: c.vw1920(10);
+                    font-size: 18px;
+                }
+            }
+
+            .inputFieldTextarea {
+                textarea {
+                    width: 100%;
+                    height: c.vw1920(300);
+                    margin-top: c.vw1920(10);
+                }
+            }
+
+            
+            .btnSubmitRequest {
+                a {
+                    font-size: c.vw1920(34);
+                    padding: c.vw1920(10) c.vw1920(30);
+                }
+            }
+        }
+    }
+}

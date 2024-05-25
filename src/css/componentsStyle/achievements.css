@@ -1,0 +1,72 @@
+.achievements {
+  padding: 5.3333333333vw 0;
+}
+.achievements h3 {
+  margin-bottom: 5.3333333333vw;
+}
+.achievements .cardAchievements .boxContent {
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.achievements .cardAchievements .boxContent img {
+  width: 70px;
+  height: auto;
+}
+.achievements .cardAchievements .boxContent p {
+  font-weight: 600;
+}
+.achievements .cardAchievements .boxContent p:nth-child(3) {
+  font-size: 6.6666666667vw;
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+  .achievements {
+    padding: 2.3980815348vw 0;
+  }
+  .achievements h3 {
+    margin-bottom: 2.3980815348vw;
+  }
+  .achievements .cardAchievements {
+    display: flex;
+    align-items: center;
+    gap: 30px 20px;
+  }
+  .achievements .cardAchievements .boxContent {
+    width: calc(50% - 10px);
+  }
+  .achievements .cardAchievements .boxContent p {
+    font-weight: 600;
+  }
+  .achievements .cardAchievements .boxContent p:nth-child(3) {
+    font-size: 2.9976019185vw;
+  }
+}
+@media (min-width: 1200px) {
+  .achievements {
+    padding: 1.0416666667vw 0;
+  }
+  .achievements h3 {
+    margin-bottom: 1.5625vw;
+    font-size: 2.96875vw;
+  }
+  .achievements .cardAchievements {
+    display: flex;
+    align-items: center;
+    gap: 30px 20px;
+  }
+  .achievements .cardAchievements .boxContent {
+    width: calc(50% - 10px);
+  }
+  .achievements .cardAchievements .boxContent img {
+    width: 100px;
+    height: auto;
+  }
+  .achievements .cardAchievements .boxContent p {
+    font-size: 1.5625vw;
+  }
+  .achievements .cardAchievements .boxContent p:nth-child(3) {
+    font-size: 3.6458333333vw;
+  }
+}

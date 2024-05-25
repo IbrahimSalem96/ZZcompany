@@ -1,0 +1,71 @@
+@use "../functionStyle/function" as c;
+
+.someofOurProjects {
+    padding: c.vw375(30) 0;
+
+    h3 {
+        font-size: c.vw375(26);
+    }
+
+    .projectShow {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        img {
+            width: c.vw375(150);
+            height: auto;
+            filter: brightness(0.5);
+            -webkit-filter: brightness(0.5);
+
+            &:hover {
+                filter: brightness(1);
+                -webkit-filter: brightness(1);
+            }
+        }
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1199px) {
+    .someofOurProjects {
+        padding: c.vw834(30) 0;
+
+        h3 {
+            font-size: c.vw834(26);
+        }
+
+        .projectShow {
+            margin-top: c.vw834(20);
+            img {
+                width: c.vw834(150);
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .someofOurProjects {
+        padding: c.vw1920(30) 0;
+
+        h3 {
+            font-size: c.vw1920(38);
+        }
+
+        p {
+            font-size: c.vw1920(24);
+        }
+
+        .projectShow {
+            justify-content: space-between;
+            margin-top: c.vw1920(20);
+            gap: 100px;
+            img {
+                width: c.vw1920(150);
+            }
+        }
+    }
+}
