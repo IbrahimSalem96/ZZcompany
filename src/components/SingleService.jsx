@@ -21,7 +21,7 @@ const SingleService = () => {
             <h1>{service.titleSinglePage}</h1>
             <ul>
               {service.serviceDescriptionPoints.map((point, index) => (
-                <li key={index}>{point}</li>
+                <li key={index + 1}>{point}</li>
               ))}
             </ul>
           </div>
