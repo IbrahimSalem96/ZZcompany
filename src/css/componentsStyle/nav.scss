@@ -43,6 +43,10 @@
             color: c.$whiteColor;
             font-weight: 600;
         }
+
+        a.active{
+            color: c.$burgundyColor;
+        }
     }
 
     .navLinkShow {
@@ -100,7 +104,7 @@
                 font-weight: 600;
             }
 
-            a.activeLink{
+            a.active{
                 color: c.$burgundyColor;
             }
         }
@@ -152,7 +156,7 @@
                 font-weight: 600;
             }
 
-            a.activeLink{
+            a.active{
                 color: c.$burgundyColor;
             }
         }

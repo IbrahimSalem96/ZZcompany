@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { filterList, serviceList } from "../constants/service";
 import { Link } from "react-router-dom";
 

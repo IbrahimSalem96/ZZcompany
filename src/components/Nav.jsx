@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logoCompany.png";
 import barResponservMobile from "../assets/barMobile.svg";
 import mobileCloseIcon from "../assets/mobileCloseIcon.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -27,13 +27,13 @@ const Nav = () => {
         <hr />
         <ul>
           <li>
-            <a href="#">Home</a>
+          <NavLink  to={'/'}>Home</NavLink>
           </li>
           <li>
-            <a href="#">Services</a>
+          <NavLink  to={'/services'} >Services</NavLink>
           </li>
           <li>
-            <a href="#">Sections</a>
+          <NavLink  to={'/contactUs'}>contact Us</NavLink>
           </li>
         </ul>
       </div>
@@ -41,13 +41,13 @@ const Nav = () => {
       <div className="navLinkDesktop">
         <ul>
           <li>
-            <Link to={'/'} className="activeLink">Home</Link>
+            <NavLink  to={'/'}>Home</NavLink>
           </li>
           <li>
-            <Link to={'/services'}>Services</Link>
+            <NavLink  to={'/services'}>Services</NavLink>
           </li>
           <li>
-            <Link to={'/contactUs'}>contact Us</Link>
+            <NavLink  to={'/contactUs'}>contact Us</NavLink>
           </li>
         </ul>
       </div>

@@ -55,7 +55,7 @@ export const serviceList = [
     someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
-    id: 1,
+    id: 5,
     category: "",
     bgImage: imageService1,
     title: "Power Bi (Create Dashboard)",
@@ -68,7 +68,7 @@ export const serviceList = [
     someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
-    id: 2,
+    id: 6,
     category: "",
     bgImage: imageService2,
     title: "Create Website Front-End",
@@ -81,7 +81,7 @@ export const serviceList = [
     someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
-    id: 3,
+    id: 7,
     category: "",
     bgImage: imageService1,
     title: "Create Website Full Stack From A to Z",
@@ -94,7 +94,7 @@ export const serviceList = [
     someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
-    id: 4,
+    id: 8,
     category: "",
     bgImage: imageService2,
     title: "Create Website Back-End",

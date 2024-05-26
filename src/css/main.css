@@ -69,6 +69,9 @@
   color: white;
   font-weight: 600;
 }
+.navList .navLink a.active {
+  color: #721F31;
+}
 .navList .navLinkShow {
   opacity: 1;
   z-index: 2;
@@ -113,7 +116,7 @@
     color: white;
     font-weight: 600;
   }
-  .navList .navLinkDesktop a.activeLink {
+  .navList .navLinkDesktop a.active {
     color: #721F31;
   }
   .navList .navLink {
@@ -153,7 +156,7 @@
     color: white;
     font-weight: 600;
   }
-  .navList .navLinkDesktop a.activeLink {
+  .navList .navLinkDesktop a.active {
     color: #721F31;
   }
   .navList .navLink {
