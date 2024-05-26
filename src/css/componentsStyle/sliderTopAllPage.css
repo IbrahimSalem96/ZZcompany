@@ -2,14 +2,31 @@
   height: 53.3333333333vw;
   background-color: #353535;
 }
+.sliderTopAllPage .swiper-wrapper {
+  height: 53.3333333333vw;
+}
+.sliderTopAllPage .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.sliderTopAllPage .swiper-button-prev,
+.sliderTopAllPage .swiper-button-next {
+  color: #721F31;
+}
 
 @media (min-width: 766px) and (max-width: 1199px) {
   .sliderTopAllPage {
     height: 23.9808153477vw;
   }
+  .sliderTopAllPage .swiper-wrapper {
+    height: 23.9808153477vw;
+  }
 }
 @media (min-width: 1200px) {
   .sliderTopAllPage {
-    height: 15.625vw;
+    height: 20.8333333333vw;
+  }
+  .sliderTopAllPage .swiper-wrapper {
+    height: 20.8333333333vw;
   }
 }

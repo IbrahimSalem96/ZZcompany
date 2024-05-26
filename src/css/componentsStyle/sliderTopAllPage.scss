@@ -1,18 +1,42 @@
 @use "../functionStyle/function" as c;
 
-.sliderTopAllPage{
+.sliderTopAllPage {
     height: c.vw375(200);
     background-color: c.$grayColorBlack;
+
+    .swiper-wrapper {
+        height: c.vw375(200);
+    }
+
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        color: c.$burgundyColor;
+    }
 }
 
 @media (min-width: 766px) and (max-width: 1199px) {
-    .sliderTopAllPage{
+    .sliderTopAllPage {
         height: c.vw834(200);
-    }    
+
+        .swiper-wrapper {
+            height: c.vw834(200);
+        }
+    }
 }
 
 @media (min-width: 1200px) {
-    .sliderTopAllPage{
-        height: c.vw1920(300);
-    }   
+    .sliderTopAllPage {
+        height: c.vw1920(400);
+
+        .swiper-wrapper {
+            height: c.vw1920(400);
+        }
+    }
 }

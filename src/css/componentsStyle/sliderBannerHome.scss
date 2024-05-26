@@ -1,18 +1,70 @@
 @use "../functionStyle/function" as c;
 
-.sliderBannerHome{
-    height: c.vw375(400);
+.sliderBannerHome {
+    height: c.vw375(300);
     background-color: c.$grayColorBlack;
+
+    .autoplay-progress {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        z-index: 1;
+
+        svg {
+            transform: rotate(-90deg);
+            width: 48px;
+            height: 48px;
+        }
+
+        circle {
+            stroke: white;
+            stroke-width: 4;
+            stroke-dasharray: 126;
+        }
+
+        span {
+            position: absolute;
+            font-size: 12px;
+        }
+    }
+
+    .swiper-wrapper{
+        height: c.vw375(300);
+    }
+
+    .swiper-slide{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        color: c.$burgundyColor;
+    }
 }
 
 @media (min-width: 766px) and (max-width: 1199px) {
-    .sliderBannerHome{
+    .sliderBannerHome {
         height: c.vw834(400);
-    }    
+
+        .swiper-wrapper{
+            height: c.vw834(400);
+        }
+    }
 }
 
 @media (min-width: 1200px) {
-    .sliderBannerHome{
+    .sliderBannerHome {
         height: c.vw1920(700);
-    }   
+
+        .swiper-wrapper{
+            height: c.vw1920(700);
+        }
+    }
 }
