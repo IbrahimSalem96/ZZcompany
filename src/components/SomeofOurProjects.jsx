@@ -19,10 +19,10 @@ const SomeofOurProjects = () => {
         </p>
         <div className="projectShow">
           {service.someOfOurProjects.map((image, index) => (
-            <img src={image} alt="image project " key={index + 1} />
+            <img src={image} alt={service.title} key={index + 1} />
           ))}
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
