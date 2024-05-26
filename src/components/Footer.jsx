@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logoCompany.png";
 
 const Footer = () => {
@@ -13,13 +14,13 @@ const Footer = () => {
           <p>Main</p>
           <ul>
             <li>
-              <a href="#">Home Page</a>
+              <Link to={'/'}>Home Page</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to={'/'}>Services</Link>
             </li>
             <li>
-              <a href="#">Sections</a>
+              <Link to={'/'}>Sections</Link>
             </li>
           </ul>
         </div>
@@ -28,13 +29,13 @@ const Footer = () => {
           <p>Our services</p>
           <ul>
             <li>
-              <a href="#">Home Page</a>
+              <Link to={'/'}>Home Page</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to={'/'}>Services</Link>
             </li>
             <li>
-              <a href="#">Sections</a>
+              <Link to={'/'}>Sections</Link>
             </li>
           </ul>
         </div>
@@ -43,13 +44,13 @@ const Footer = () => {
           <p>Sections</p>
           <ul>
             <li>
-              <a href="#">Home Page</a>
+              <Link to={'/'}>Home Page</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to={'/'}>Services</Link>
             </li>
             <li>
-              <a href="#">Sections</a>
+              <Link to={'/'}>Sections</Link>
             </li>
           </ul>
         </div>

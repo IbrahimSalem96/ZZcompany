@@ -17,13 +17,15 @@ const Achievements = () => {
       { threshold: 0.1 } // Trigger when 10% of the section is in view
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const ref = sectionRef.current;
+
+    if (ref) {
+      observer.observe(ref);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (ref) {
+        observer.unobserve(ref);
       }
     };
   }, [hasStarted]);
@@ -51,13 +53,17 @@ const Achievements = () => {
   }, [hasStarted]);
 
   return (
-    <div className="container" >
+    <div className="container" ref={sectionRef}>
       <div className="achievements">
         <h3>Our Achievements in Numbers</h3>
-        <div className="cardAchievements" ref={sectionRef}>
+        <div className="cardAchievements">
           {achievementsList.map((list, index) => (
-            <div className="boxContent" key={list.id} style={{background : list.bgColor, color : list.color}}>
-              <img src={imgLogo} alt="logo Achievements" />
+            <div
+              className="boxContent"
+              key={list.id}
+              style={{ background: list.bgColor, color: list.color }}
+            >
+              <img src={imgLogo} alt={list.title} />
               <p>{list.p1}</p>
               <p>{Math.floor(counts[index])}</p>
               <p>{list.p2}</p>

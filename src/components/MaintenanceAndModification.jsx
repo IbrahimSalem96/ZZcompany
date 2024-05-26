@@ -17,7 +17,7 @@ const MaintenanceAndModification = () => {
           <div className="boxListServices">
             {maintenanceAndModificationList.map((list) => (
               <div className="listContent" key={list.id}>
-                <img src={list.icon} alt="image list maintenance and modification" />
+                <img src={list.icon} alt={list.title} />
                 <p>{list.title}</p>
               </div>
             ))}

@@ -12,7 +12,7 @@ const OtherServices = () => {
           {serviceList.map((list) => (
             <div className="boxContent" key={list.id}>
               <div className="hoverImage">
-                <img src={list.bgImage} alt="Image Service" />
+                <img src={list.bgImage} alt={list.title} />
 
                 <div className="bgHover"> </div>
 

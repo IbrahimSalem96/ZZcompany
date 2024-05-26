@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logoCompany.png";
 import barResponservMobile from "../assets/barMobile.svg";
 import mobileCloseIcon from "../assets/mobileCloseIcon.svg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);

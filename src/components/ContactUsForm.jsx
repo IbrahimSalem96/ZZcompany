@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {serviceList} from '../constants/service'
+import { Link } from "react-router-dom";
 
 const ContactUsForm = () => {
     const [listServices, setListServices] = useState(false);
@@ -57,7 +58,7 @@ const ContactUsForm = () => {
                     </div>
 
                     <div className="btnSubmitRequest">
-                        <a href="#">Submit Request</a>
+                        <Link to={'/'}>Submit Request</Link>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import { serviceList } from "../constants/service";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const SingleService = () => {
   const { id } = useParams();
@@ -13,7 +13,7 @@ const SingleService = () => {
     <div className="container">
       <div className="singleService">
         <div className="boxcontent">
-          <img src={service.bgImage} alt="image service " />
+          <img src={service.bgImage} alt={service.title} />
         </div>
         <div className="boxcontent">
           <p>Home / Services</p>
@@ -27,8 +27,8 @@ const SingleService = () => {
           </div>
 
           <div className="btnSubmit">
-            <a href="#">Order now</a>
-            <a href="#">Contact us now</a>
+            <Link to={'/contactUs'}>Order now</Link>
+            <Link to={'/contactUs'}>Contact us now</Link>
           </div>
         </div>
       </div>
