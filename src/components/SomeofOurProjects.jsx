@@ -6,8 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation"; // Import navigation styles
 import "swiper/css/pagination";
 
-// Install Swiper modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { serviceList } from "../constants/service";
 import { useParams } from "react-router-dom";
