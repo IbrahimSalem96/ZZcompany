@@ -14,7 +14,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 7,
@@ -91,7 +91,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
   {
     id: 8,
@@ -104,7 +104,7 @@ export const serviceList = [
       "Creating a fully-fledged dashboard from scratch with specific features",
       "Creating a fully-fledged dashboard from scratch with specific features",
     ],
-    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
+    someOfOurProjects: [logoCompany, logoCompany , logoCompany, logoCompany, logoCompany, logoCompany, logoCompany , logoCompany, logoCompany, logoCompany],
   },
 ];
 
